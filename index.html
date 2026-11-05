@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'">
+  <title>burrishop.co | Marketplace para niños</title>
+  <meta name="description" content="Marketplace infantil de burrishop.co: juguetes, comida mexicana, postres, ropa y patrocinadores.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#inicio">burri<span>shop</span>.co</a>
+    <nav aria-label="Secciones">
+      <a href="#juguetes">Juguetes</a>
+      <a href="#comida">Comida mexicana</a>
+      <a href="#postres">Postres</a>
+      <a href="#ropa">Ropa</a>
+      <a href="#patrocinadores">Patrocinadores</a>
+    </nav>
+    <button class="cart" id="cart-btn" type="button" aria-label="Carrito">
+      Carrito <span id="cart-count">0</span>
+    </button>
+  </header>
+
+  <main id="inicio">
+    <section class="hero hero-juguetes" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <h1 id="hero-title">¡Bienvenidos al marketplace de burrishop.co!</h1>
+        <p>Diversión y cosas emocionantes para todos los niños.</p>
+        <a class="btn" href="#juguetes">Explorar</a>
+      </div>
+    </section>
+
+    <!-- JUGUETES -->
+    <section id="juguetes" class="seccion">
+      <a class="banner banner-juguetes" href="juguetes.html" aria-label="Ver detalle: Juguetes burrishop.co"></a>
+      <h2><a href="juguetes.html">Juguetes</a></h2>
+      <p class="sub">Peluches, bloques, trenes, muñecas y juegos de mesa.</p>
+      <div class="grid">
+        <article class="card"><h3>Unicornio tejido</h3><p>Amigurumi hecho a mano.</p><span class="precio">$350</span><button class="add" type="button" data-nombre="Unicornio tejido">Agregar</button></article>
+        <article class="card"><h3>Tren de madera</h3><p>Locomotora y vagones de colores.</p><span class="precio">$280</span><button class="add" type="button" data-nombre="Tren de madera">Agregar</button></article>
+        <article class="card"><h3>Bloques de construcción</h3><p>Set de 100 piezas.</p><span class="precio">$220</span><button class="add" type="button" data-nombre="Bloques de construcción">Agregar</button></article>
+        <article class="card"><h3>Juegos de mesa</h3><p>Diversión para toda la familia.</p><span class="precio">$260</span><button class="add" type="button" data-nombre="Juegos de mesa">Agregar</button></article>
+      </div>
+    </section>
+
+    <!-- COMIDA MEXICANA -->
+    <section id="comida" class="seccion alt">
+      <a class="banner banner-comida" href="comida.html" aria-label="Ver detalle: Comida mexicana burrishop"></a>
+      <h2><a href="comida.html">Comida mexicana</a></h2>
+      <p class="sub">Sabores de México en porciones pensadas para peques.</p>
+      <div class="grid">
+        <article class="card"><h3>Mini burrito</h3><p>Arroz, frijoles y pollo.</p><span class="precio">$75</span><button class="add" type="button" data-nombre="Mini burrito">Agregar</button></article>
+        <article class="card"><h3>Quesadillas</h3><p>Tortilla con queso derretido.</p><span class="precio">$60</span><button class="add" type="button" data-nombre="Quesadillas">Agregar</button></article>
+        <article class="card"><h3>Nachos suaves</h3><p>Totopos con queso, sin picante.</p><span class="precio">$55</span><button class="add" type="button" data-nombre="Nachos suaves">Agregar</button></article>
+        <article class="card"><h3>Tacos de pollo</h3><p>Orden de 3 tacos pequeños.</p><span class="precio">$70</span><button class="add" type="button" data-nombre="Tacos de pollo">Agregar</button></article>
+      </div>
+    </section>
+
+    <!-- POSTRES -->
+    <section id="postres" class="seccion">
+      <a class="banner banner-postres" href="postres.html" aria-label="Ver detalle: Postres burrishop"></a>
+      <h2><a href="postres.html">Postres</a></h2>
+      <p class="sub">Helados arcoíris, macarons y muchas sorpresas dulces.</p>
+      <div class="grid">
+        <article class="card"><h3>Helado arcoíris</h3><p>Cono con chispas de colores.</p><span class="precio">$50</span><button class="add" type="button" data-nombre="Helado arcoíris">Agregar</button></article>
+        <article class="card"><h3>Macarons</h3><p>Caja de 6 sabores.</p><span class="precio">$120</span><button class="add" type="button" data-nombre="Macarons">Agregar</button></article>
+        <article class="card"><h3>Galletas decoradas</h3><p>Hechas a mano.</p><span class="precio">$45</span><button class="add" type="button" data-nombre="Galletas decoradas">Agregar</button></article>
+        <article class="card"><h3>Paletas de frutas</h3><p>Naturales, sin conservadores.</p><span class="precio">$30</span><button class="add" type="button" data-nombre="Paletas de frutas">Agregar</button></article>
+      </div>
+    </section>
+
+    <!-- ROPA -->
+    <section id="ropa" class="seccion alt">
+      <a class="banner banner-ropa" href="ropa.html" aria-label="Ver detalle: Ropa infantil burrishop"></a>
+      <h2><a href="ropa.html">Ropa</a></h2>
+      <p class="sub">Prendas cómodas y divertidas para jugar todo el día.</p>
+      <div class="grid">
+        <article class="card"><h3>Playera burrishop</h3><p>Algodón suave con estampado.</p><span class="precio">$180</span><button class="add" type="button" data-nombre="Playera burrishop">Agregar</button></article>
+        <article class="card"><h3>Pantalón burritos</h3><p>Estampado de burritos.</p><span class="precio">$240</span><button class="add" type="button" data-nombre="Pantalón burritos">Agregar</button></article>
+        <article class="card"><h3>Sudadera estampada</h3><p>Ideal para días frescos.</p><span class="precio">$320</span><button class="add" type="button" data-nombre="Sudadera estampada">Agregar</button></article>
+        <article class="card"><h3>Pijama de colores</h3><p>Set de dos piezas.</p><span class="precio">$260</span><button class="add" type="button" data-nombre="Pijama de colores">Agregar</button></article>
+      </div>
+    </section>
+
+    <!-- PATROCINADORES -->
+    <section id="patrocinadores" class="seccion">
+      <a class="banner banner-patrocinadores" href="patrocinadores.html" aria-label="Ver detalle: Patrocinadores especiales burrishop.co"></a>
+      <h2><a href="patrocinadores.html">Patrocinadores especiales</a></h2>
+      <p class="sub">Gracias a quienes hacen posible la diversión de burrishop.co.</p>
+      <div class="grid">
+        <article class="card spons"><h3>Tu marca aquí</h3><p>Espacio disponible para patrocinadores.</p></article>
+        <article class="card spons"><h3>Tu marca aquí</h3><p>Espacio disponible para patrocinadores.</p></article>
+        <article class="card spons"><h3>Tu marca aquí</h3><p>Espacio disponible para patrocinadores.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© burrishop.co · Hecho con cariño para los niños</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
